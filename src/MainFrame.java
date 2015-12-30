@@ -7,6 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+
 import graphics.Point;
 
 public class MainFrame extends JFrame {
@@ -33,21 +35,24 @@ public class MainFrame extends JFrame {
 
         List<List<Point>> data = new ArrayList<>();
         List<Point> val = new ArrayList<>();
-        for (double i = 0; i < 10; i = i + 0.1) {
-            val.add(new Point(i, (13.5 - 1.5 * i)));
+        List<Point> va3 = new ArrayList<>();
+        for (double i = 0; i <= 1000; i = i + 1) {
+            Double d = new Random().nextDouble() * 1500;
+            if (d <= 200 || d >= 800)
+                va3.add(new Point(d, i));
+            else
+                val.add(new Point(d, i));
         }
         data.add(val);
         List<Point> val2 = new ArrayList<>();
-        for (double i = 0; i < 10; i = i + 0.1) {
-            val2.add(new Point(i, 7 - (0.5 * i)));
+        for (double i = 0; i < 1000; i = i + 0.1) {
+            val2.add(new Point(0, i));
+            val2.add(new Point(200, i));
+            val2.add(new Point(800, i));
+            val2.add(new Point(1000, i));
         }
         data.add(val2);
-        List<Point> val3 = new ArrayList<>();
-        for (double i = 0; i < 10; i = i + 0.1) {
-            val3.add(new Point(i, 23.0/3.0 - 2.0/3.0 * i));
-        }
-        data.add(val3);
-
+        data.add(va3);
 
         JFreeChart sca = ScatterPlotService.createChart("lolka", "xz", "0_O", new CustomXYDataset(data));
 
