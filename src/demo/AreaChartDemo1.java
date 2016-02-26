@@ -31,30 +31,25 @@ public class AreaChartDemo1 extends ApplicationFrame
 	private static CategoryDataset createDataset()
 	{
 		DefaultCategoryDataset defaultcategorydataset = new DefaultCategoryDataset();
-		defaultcategorydataset.addValue(1.0D, "Series 1", "Type 1");
-		defaultcategorydataset.addValue(4D, "Series 1", "Type 2");
-		defaultcategorydataset.addValue(3D, "Series 1", "Type 3");
-		defaultcategorydataset.addValue(5D, "Series 1", "Type 4");
-		defaultcategorydataset.addValue(5D, "Series 1", "Type 5");
-		defaultcategorydataset.addValue(7D, "Series 1", "Type 6");
-		defaultcategorydataset.addValue(7D, "Series 1", "Type 7");
-		defaultcategorydataset.addValue(8D, "Series 1", "Type 8");
-		defaultcategorydataset.addValue(5D, "Series 2", "Type 1");
-		defaultcategorydataset.addValue(7D, "Series 2", "Type 2");
-		defaultcategorydataset.addValue(6D, "Series 2", "Type 3");
-		defaultcategorydataset.addValue(8D, "Series 2", "Type 4");
-		defaultcategorydataset.addValue(4D, "Series 2", "Type 5");
-		defaultcategorydataset.addValue(4D, "Series 2", "Type 6");
-		defaultcategorydataset.addValue(2D, "Series 2", "Type 7");
-		defaultcategorydataset.addValue(1.0D, "Series 2", "Type 8");
-		defaultcategorydataset.addValue(4D, "Series 3", "Type 1");
-		defaultcategorydataset.addValue(3D, "Series 3", "Type 2");
-		defaultcategorydataset.addValue(2D, "Series 3", "Type 3");
-		defaultcategorydataset.addValue(3D, "Series 3", "Type 4");
-		defaultcategorydataset.addValue(6D, "Series 3", "Type 5");
-		defaultcategorydataset.addValue(3D, "Series 3", "Type 6");
-		defaultcategorydataset.addValue(4D, "Series 3", "Type 7");
-		defaultcategorydataset.addValue(3D, "Series 3", "Type 8");
+
+
+		defaultcategorydataset.addValue(50000, "Доход", "Сентябрь 2015");
+//		defaultcategorydataset.addValue(30000, "Норма", "Сентябрь 2015");
+		defaultcategorydataset.addValue(35432, "Расход", "Сентябрь 2015");
+
+		defaultcategorydataset.addValue(50000, "Доход", "Октябрь 2015");
+//		defaultcategorydataset.addValue(30000, "Норма", "Октябрь 2015");
+		defaultcategorydataset.addValue(26000, "Расход", "Октябрь 2015");
+
+		defaultcategorydataset.addValue(60000, "Доход", "Ноябрь 2015");
+//		defaultcategorydataset.addValue(30000, "Норма", "Ноябрь 2015");
+		defaultcategorydataset.addValue(42000, "Расход", "Ноябрь 2015");
+
+		defaultcategorydataset.addValue(63400, "Доход", "Декабрь 2015");
+//		defaultcategorydataset.addValue(30000, "Норма", "Декабрь 2015");
+		defaultcategorydataset.addValue(31000, "Расход", "Декабрь 2015");
+
+
 		return defaultcategorydataset;
 	}
 
